@@ -4,7 +4,7 @@ trigger: none
 # - main
 
 variables:
-  resourceGroupName: 'rg-bicep-demo-0023'
+  resourceGroupName: 'rg-bicep-demo-0024'
   location: 'westeurope'
   webAppName: 'bicep0023'
   templateFile: '01-bicep-webapp/webapp-linux.bicep'
@@ -18,7 +18,7 @@ stages:
   - job: scanWhatif
     displayName: scan and run whatif
     pool:
-      vmImage: windows-2022
+      vmImage: windows-latest
 
     steps:
     
